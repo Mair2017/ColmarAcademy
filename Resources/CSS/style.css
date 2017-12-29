@@ -14,6 +14,8 @@ h4 {
   font-weight: bold;
 }
 
+/* Header*/
+
 header {
   height: 64px;
   display: flex;
@@ -78,6 +80,8 @@ ul li a:hover {
     width: 100%;
   }
 }
+
+/* Banner */
 
 section.banner {
   background-color: #7789AA;
@@ -156,5 +160,287 @@ section.banner {
   .bannerinfo h2 {
     margin-left: 32px;
     margin-right: 32px;
+  }
+}
+
+/* Info */
+.info-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.feature-block {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px;
+}
+
+.feature-block img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+
+.feature-block h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #051838;
+  margin-bottom: 24px;
+}
+
+.feature-block p {
+  color: #051838;
+}
+
+.feature-block span {
+  margin-top: 32px;
+  font-size: 0.9rem;
+  color: #152c55;
+}
+
+.mobile-sidebar {
+  display: none;
+}
+
+.info-section .sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border-left: 2px solid #4d648d;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.info-section .sidebar div:nth-child(3n) {
+  background-color: #7789AA;
+}
+
+.info-section .sidebar div:first-child {
+  border-bottom: 1px solid #4d648d;
+}
+
+.sidebar-block img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.sidebar-block {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+}
+
+.description {
+  margin-right: 16px;
+}
+
+.description h4 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #051838;
+  padding-bottom: 8px;
+}
+
+.description p {
+  color: #051838;
+  padding-bottom: 12px;
+}
+
+.description a {
+  text-decoration: none;
+}
+
+.description a:hover {
+  color: #7789aa;
+}
+
+@media only screen and (max-width: 768px) {
+  section.info-section {
+    justify-content: center;
+  }
+
+  .feature-block {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .mobile-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 16px 32px 16px;
+    width: 100%;
+  }
+
+  .sidebar-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sidebar-block img {
+    width: 90%;
+    height: auto;
+    padding: none;
+  }
+
+  .description {
+    width: 90%;
+    text-align: left;
+  }
+
+  .mobile-sidebar div:nth-child(2n) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+/*Learning*/
+section.learning {
+  background-color: #7789AA;
+  display: block;
+}
+
+.learning-mobile {
+  display: none;
+}
+
+.learning h3 {
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+  color: #051838;
+  padding-top: 32px;
+}
+
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 32px 72px;
+}
+
+.courses {
+  width: 30%;
+  background-color: white;
+  margin-top: 32px;
+}
+
+.courses img {
+  width: 100%;
+}
+
+.courses .description {
+  padding: 16px;
+  color: #051838;
+}
+
+.courses .description h4 {
+  padding-bottom: 12px;
+}
+
+.courses .description p {
+  padding-top: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .course-container {
+    display: none;
+  }
+
+  section.learning {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-top: 1px solid #7789AA;
+  }
+
+  .learning h3 {
+    padding-bottom: 16px;
+  }
+
+  .learning-mobile {
+    display: block;
+    justify-content: center;
+    padding-bottom: 32px;
+    width: 80%
+  }
+
+  .learning-mobile h4 {
+    background-color: #7789aa;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+  }
+}
+
+/*Thesis*/
+.thesis {
+  display: block;
+}
+
+.thesis h3 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 800;
+  color: #051838;
+}
+
+.thesis-container {
+  display: inline-flex;
+}
+
+.video {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+video {
+  margin-bottom: 24px;
+  border: 1px solid #7789AA;
+}
+
+.video h4 {
+  padding-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+#thesis {
+  margin-top: 32px;
+  width: 40%;
+}
+
+#thesis div:first-child{
+  padding-top: 0px;
+  background-color: #7789AA;
+}
+
+@media only screen and (max-width: 768px) {
+  #thesis {
+    display: none;
+  }
+
+  .thesis {
+    border-top: 1px solid #7789AA;
+  }
+
+  .video {
+    display: block;
+    width: 100%;
+  }
+
+  .video h4,
+  .video p {
+    display: none;
   }
 }

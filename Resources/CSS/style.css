@@ -265,7 +265,7 @@ section.banner {
     display: none;
   }
 
-  .sidebar {
+  .info-section .sidebar {
     display: none;
   }
 
@@ -442,5 +442,25 @@ video {
   .video h4,
   .video p {
     display: none;
+  }
+}
+
+/*Footer*/
+footer {
+  display: inline-flex;
+  border-top: 1px solid #7789AA;
+  padding-top: 16px;
+  padding-left: 24px;
+  width: 100%;
+  color: #7789AA;
+  font-size: 0.75rem;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  footer nav {
+    display: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
